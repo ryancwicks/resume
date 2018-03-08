@@ -1,10 +1,10 @@
 \documentclass[letterpaper,11pt]{letter}
 
 \usepackage{fancyhdr,lastpage,calc,graphicx}
-\usepackage[letter]{ragged2e}
+\usepackage[letter]{}%{ragged2e}
 
-\setlength\RaggedRightRightskip{0pt plus 1cm}
-\setlength\RaggedRightParindent{12pt}
+%\setlength\RaggedRightRightskip{0pt plus 1cm}
+%\setlength\RaggedRightParindent{12pt}
 
 \headsep 0.125in
 \setlength\voffset{-0.95in}
@@ -22,7 +22,6 @@
 \fancyhead[C]{\large \textbf{Cover Letter}}
 \fancyhead[R]{}
 \fancyfoot{}
-%\fancyfoot[C]{Page 6} 
 \setlength\headheight{10pt}
 \renewcommand\headrulewidth{1pt}
 \renewcommand\footrulewidth{0pt}
@@ -38,8 +37,7 @@
   \setlength{\parsep}{0pt}}{\end{itemize}
 }
 
-
-%\signature {Ryan Wicks, BSc.H., MSc., Ph.D Candidate}
+%signature block
 \signature{\parbox[b][0.3in][b]{3in}{
 \includegraphics[width=2in]{mysignature.pdf}\\
 Ryan Wicks, BSc.H., MSc., Ph.D}}
@@ -51,13 +49,13 @@ Ryan Wicks, BSc.H., MSc., Ph.D}}
 
 \begin{letter}{}
 
-\opening{To the hiring committee at,}
+\opening{To the hiring committee at ,}
 
 
 \closing{Sincerely, }
-Sincerely,\\[\medskipamount]  % The closing
-\includegraphics[width=2in]{mysignature}\\[\medskipamount]
-\fromsig
+%Sincerely,\\[\medskipamount]  % The closing
+%\includegraphics[width=2in]{mysignature}\\[\medskipamount]
+%\fromsig
 \end {letter}
 
 \end {document}

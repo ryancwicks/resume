@@ -7,6 +7,7 @@ Needs pdflatex to typeset:
 ````
 sudo apt-get install texlive-latex-base
 sudo apt-get install texlive-fonts-recommended
+tlmgr install ragged2e
 ````
 
 ## Generate PDF
