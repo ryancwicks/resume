@@ -1,0 +1,63 @@
+\documentclass[letterpaper,11pt]{letter}
+
+\usepackage{fancyhdr,lastpage,calc,graphicx}
+\usepackage[letter]{ragged2e}
+
+\setlength\RaggedRightRightskip{0pt plus 1cm}
+\setlength\RaggedRightParindent{12pt}
+
+\headsep 0.125in
+\setlength\voffset{-0.95in}
+\setlength\hoffset{-0.25in}
+\setlength\oddsidemargin{0in}
+\setlength\marginparwidth{0in}
+\setlength\marginparsep{0.5in}
+\setlength\topmargin{0.25in}
+\setlength\textheight{10in}
+\setlength\textwidth{6.9in}
+
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[L]{Ryan Wicks}
+\fancyhead[C]{\large \textbf{Cover Letter}}
+\fancyhead[R]{}
+\fancyfoot{}
+%\fancyfoot[C]{Page 6} 
+\setlength\headheight{10pt}
+\renewcommand\headrulewidth{1pt}
+\renewcommand\footrulewidth{0pt}
+
+
+%
+% this makes list spacing much better.
+%
+\newenvironment{my_itemize}{
+\begin{itemize}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}}{\end{itemize}
+}
+
+
+%\signature {Ryan Wicks, BSc.H., MSc., Ph.D Candidate}
+\signature{\parbox[b][0.3in][b]{3in}{
+\includegraphics[width=2in]{mysignature.pdf}\\
+Ryan Wicks, BSc.H., MSc., Ph.D}}
+\address{Ryan Wicks \\ 640 Royal Fern St. \\ Waterloo, ON \\ N2V 2P6\\phone: (519) 226-7063\\ e-mail: ryancwicks@gmail.com}
+
+\longindentation=300pt
+
+\begin{document}
+
+\begin{letter}{}
+
+\opening{To the hiring committee at,}
+
+
+\closing{Sincerely, }
+Sincerely,\\[\medskipamount]  % The closing
+\includegraphics[width=2in]{mysignature}\\[\medskipamount]
+\fromsig
+\end {letter}
+
+\end {document}

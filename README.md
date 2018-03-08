@@ -14,3 +14,11 @@ sudo apt-get install texlive-fonts-recommended
 ````
 latex resume.tex
 ````
+
+## Decrypting the Cover Letter Signature 
+
+Do this before running latex on the cover letter.
+
+````
+gpg mysignature.pdf.gpg
+````
